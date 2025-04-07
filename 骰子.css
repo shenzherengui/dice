@@ -1,0 +1,208 @@
+.body{
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    border: 2px solid blue;
+    border-radius: 10px ;
+    box-shadow: 2px 2px 2px 2px blue;
+    background-color: yellow;
+
+}
+p{
+    margin: 10px  auto;
+    width: 70px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); */
+    transform-style: preserve-3d;   /* 开启3D空间 */
+    perspective: 2000px; /* 模拟人眼距离，值越小立体感越强 */
+    margin: 50px;
+    /* border: 2px solid black; */
+    transform: rotateX(270deg) rotateY(0deg);
+}
+.face{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    display: flex;
+    border: 2px solid;
+    background-color: white;
+}
+.dot{
+    background-color: black;
+}
+.one{
+    transform: translateZ(50px);
+}
+.six{
+    transform: translateZ(-50px);
+    /* background-color: purple; */
+}
+.two{
+    transform: translateY(50px) rotateX(90deg);
+    /* background-color: orange; */
+}
+.three{
+    transform: rotateY(90deg) translateZ(50px);
+    /* background-color: yellow; */
+}
+.four{
+    transform: rotateY(90deg) translateZ(-50px);
+    /* background-color: green; */
+}
+.five{
+    transform: translateY(-50px) rotateX(90deg);
+    /* background-color: blue; */
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.one .dot{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.two .dot:nth-child(1){
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translate(-50%,-50%); 
+}
+.two .dot:nth-child(2){
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%,-50%); 
+}
+.three .dot:nth-child(1){
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.three .dot:nth-child(2){
+    position: absolute;
+    left: 75%;
+    top: 75%;
+    transform: translate(-50%,-50%);
+}
+.three .dot:nth-child(3){
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    transform: translate(-50%,-50%);
+}
+.four .dot:nth-child(1){
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+}
+.four .dot:nth-child(1){
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+}
+.four .dot:nth-child(2){
+    position: absolute;
+    left: 70%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+}
+.four .dot:nth-child(3){
+    position: absolute;
+    left: 30%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+}
+.four .dot:nth-child(4){
+    position: absolute;
+    left: 70%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+}
+.five .dot:nth-child(1){
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.five .dot:nth-child(2){
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+}
+.five .dot:nth-child(3){
+    position: absolute;
+    left: 30%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+}
+.five .dot:nth-child(4){
+    position: absolute;
+    left: 70%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+}
+.five .dot:nth-child(5){
+    position: absolute;
+    left: 70%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+}
+.six .dot:nth-child(1){
+    position: absolute;
+    left: 70%;
+    top: 75%;
+    transform: translate(-50%,-50%);
+}
+.six .dot:nth-child(2){
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.six .dot:nth-child(3){
+    position: absolute;
+    left: 70%;
+    top: 25%;
+    transform: translate(-50%,-50%);
+}
+.six .dot:nth-child(4){
+    position: absolute;
+    left: 30%;
+    top: 75%;
+    transform: translate(-50%,-50%);
+}
+.six .dot:nth-child(5){
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.six .dot:nth-child(6){
+    position: absolute;
+    left: 30%;
+    top: 25%;
+    transform: translate(-50%,-50%);
+}
+button{
+    background-color: rgb(173, 206, 239);
+    border: 1px solid blue;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px;
+    margin-left: 79px;
+}
